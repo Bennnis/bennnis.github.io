@@ -19,7 +19,7 @@
 
         body {
             margin: 0 auto;
-            max-width: 600px;
+            max-width: 800px;
             padding: 10px;
         }
 
@@ -42,7 +42,7 @@
         li {
             padding-bottom: 30px;
             position: relative;
-            padding-left: 100px;
+            padding-left: 200px;
         }
 
         sub {
@@ -64,7 +64,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 100px;
+            width: 200px;
             line-height: 32px;
             font-weight: 700;
             text-align: right;
@@ -168,9 +168,13 @@
             <label for="title">issue title：</label>
             <input type="text" id="title" required>
         </li>
+        <li>
+            <label for="node">browser version：</label>
+            <input style="width: 200px" type="text" id="browser" required>
+        </li>
         <li id="node-version-wrap">
             <label for="node">node version：</label>
-            <input style="width: 100px" type="text" id="node" pattern="^[vV]?(\d\.?)+$" required>
+            <input style="width: 200px" type="text" id="node" pattern="^[vV]?(\d\.?)+$" required>
             <sub>use <code>node -v</code> catch node version。</sub>
         </li>
         <li>
@@ -207,6 +211,7 @@
     var title = $('#title').value;
     var node = type === 'bug' ? $('#node').value : '';
     var content = $('#content').value;
+    var browser = type === 'bug' ? $('#browser').value : '';
 
     event.preventDefault();
 
@@ -215,12 +220,20 @@
     }
     else if (type === 'bug' && !node) {
       return alert('"node version" is required');
-    }
-    else if (!content) {
+    } else if (type === 'bug' && !browser) {
+      return alert('"browser version" is required');
+    } else if (!content) {
       return alert('"content" is required');
     }
 
     var body = [];
+
+    if (node) {
+      body.push('browser version：' + node);
+      body.push('');
+      body.push('---');
+      body.push('');
+    }
 
     if (node) {
       body.push('node version：' + node);
