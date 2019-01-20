@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reducer | Slim</title>
+    <meta name="description" content="Slim: Centralized State Management With Proxy, State-Non-Editable.">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.ad606c91.css" as="style"><link rel="preload" href="/assets/js/app.311d2f34.js" as="script"><link rel="preload" href="/assets/js/19.85a987a3.js" as="script"><link rel="prefetch" href="/assets/js/10.9f74d3b3.js"><link rel="prefetch" href="/assets/js/11.9d820fcc.js"><link rel="prefetch" href="/assets/js/12.3220bfd5.js"><link rel="prefetch" href="/assets/js/13.84e12a74.js"><link rel="prefetch" href="/assets/js/14.a3c12876.js"><link rel="prefetch" href="/assets/js/15.412eda9d.js"><link rel="prefetch" href="/assets/js/16.5c9f0dc0.js"><link rel="prefetch" href="/assets/js/17.d3d768ef.js"><link rel="prefetch" href="/assets/js/18.c8372d42.js"><link rel="prefetch" href="/assets/js/2.0982581a.js"><link rel="prefetch" href="/assets/js/20.dac8a89b.js"><link rel="prefetch" href="/assets/js/21.4b4c6e5c.js"><link rel="prefetch" href="/assets/js/22.af158a43.js"><link rel="prefetch" href="/assets/js/23.57b39cc2.js"><link rel="prefetch" href="/assets/js/3.3e78496b.js"><link rel="prefetch" href="/assets/js/4.565d9458.js"><link rel="prefetch" href="/assets/js/5.65c20bc6.js"><link rel="prefetch" href="/assets/js/6.32596b3d.js"><link rel="prefetch" href="/assets/js/7.b3d06d52.js"><link rel="prefetch" href="/assets/js/8.b3f744fa.js"><link rel="prefetch" href="/assets/js/9.a3d40b7a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ad606c91.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zh/" class="home-link router-link-active"><!----> <span class="site-name">Slim</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zh/intro.html" class="nav-link">指南</a></div><div class="nav-item"><a href="/zh/slimApi.html" class="nav-link">API</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">English</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/victor0210/slim" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reducer.html" class="nav-link">en-US</a></li><li class="dropdown-item"><!----> <a href="/zh/reducer.html" class="nav-link router-link-exact-active router-link-active">zh-CN</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zh/intro.html" class="nav-link">指南</a></div><div class="nav-item"><a href="/zh/slimApi.html" class="nav-link">API</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">English</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/victor0210/slim" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reducer.html" class="nav-link">en-US</a></li><li class="dropdown-item"><!----> <a href="/zh/reducer.html" class="nav-link router-link-exact-active router-link-active">zh-CN</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading"><span>快速开始</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/zh/intro.html" class="sidebar-link">介绍</a></li><li><a href="/zh/installation.html" class="sidebar-link">安装</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading open"><span>核心模块</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/zh/state.html" class="sidebar-link">State</a></li><li><a href="/zh/reducer.html" class="active sidebar-link">Reducer</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/reducer.html#设计reducer" class="sidebar-link">设计reducer</a></li><li class="sidebar-sub-header"><a href="/zh/reducer.html#更新state" class="sidebar-link">更新State</a></li><li class="sidebar-sub-header"><a href="/zh/reducer.html#传入参数" class="sidebar-link">传入参数</a></li></ul></li><li><a href="/zh/subscribe.html" class="sidebar-link">Subscribe</a></li><li><a href="/zh/plugin.html" class="sidebar-link">Plugin</a></li></ul></div></li><li><a href="/zh/slimApi.html" class="sidebar-link">API</a></li><li><a href="/zh/controlLevel.html" class="sidebar-link">限制级别</a></li></ul> </div> <div class="page"> <div class="content"><h1 id="reducer"><a href="#reducer" aria-hidden="true" class="header-anchor">#</a> Reducer</h1> <p><strong>Reducers</strong>规范了<strong>Store</strong>如何接收全新<strong>State</strong>，它不仅阐述了对应的操作类型，也说明了<strong>State</strong>是如何发生的变化。</p> <h2 id="设计reducer"><a href="#设计reducer" aria-hidden="true" class="header-anchor">#</a> 设计reducer</h2> <p>在<strong>Slim</strong>中，一个<strong>Reducer</strong>以一个键值对的方式存在，我们希望使用更简短的代码完整说明我们需要做的事情例如：<strong>[ACTION_TYPE : REDUCER_FUNCTION]</strong></p> <p>接下来让我们看看如何实现一个<strong>Reducer</strong>。在我们一个简单的计数器应用中，我们希望有两种操作：</p> <ul><li>增加计数：increment</li> <li>减少计数：decrement</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'slim'</span>
+
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+    count<span class="token punctuation">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> counters <span class="token operator">=</span> <span class="token punctuation">{</span>
+    increment<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">// increment count</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    decrement<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">// decrement count</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    reducers<span class="token punctuation">:</span> counters<span class="token punctuation">,</span>
+    state
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'increment'</span><span class="token punctuation">)</span>
+</code></pre></div><p>在<strong>Reducers</strong>中，<strong>ACTION_TYPE</strong>的定义非常简便，不需要额外的操作，我们通过键名来表明操作类型，并在<strong>dispatch</strong>中直接出发对应的操作即可。</p> <h2 id="更新state"><a href="#更新state" aria-hidden="true" class="header-anchor">#</a> 更新State</h2> <p>那在<strong>Reducer</strong>中如何更新<strong>State</strong>？我们提供了两种可行的方式</p> <h3 id="返回一个全新的state对象"><a href="#返回一个全新的state对象" aria-hidden="true" class="header-anchor">#</a> 返回一个全新的State对象</h3> <p>这种方式更易于我们定位<strong>State</strong>的整体变化，也让整个<strong>Reducer</strong>变得可测试，但是在复杂的<strong>State</strong>结构下将会使整个方法变大，操作变得复杂。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>increment<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span>state<span class="token punctuation">,</span>
+        count<span class="token punctuation">:</span> state<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="直接在state对象上更改"><a href="#直接在state对象上更改" aria-hidden="true" class="header-anchor">#</a> 直接在State对象上更改</h3> <p>这种方法在大多数情况下会显得比较简洁和方便，只是对应的<strong>Reducer</strong>将不可测。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>increment<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>count<span class="token operator">++</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>当然，如果又想方便又希望方法可测，不妨试试下面的方法</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>increment<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    state<span class="token punctuation">.</span>count<span class="token operator">++</span>
+
+    <span class="token keyword">return</span> state
+<span class="token punctuation">}</span>
+</code></pre></div><p>以上方法各有自己的优势和劣势，您可以根据应用中的具体情况选择不同的处理方式。</p> <h2 id="传入参数"><a href="#传入参数" aria-hidden="true" class="header-anchor">#</a> 传入参数</h2> <p>在使用<strong>Reducer</strong>的时候，不免会有传入对应参数的需求，在<strong>Slim</strong>中参数传递也非常的方便</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>increment<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">,</span> count<span class="token punctuation">,</span> times<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span>state<span class="token punctuation">,</span>
+        count<span class="token punctuation">:</span> count <span class="token operator">*</span> times   <span class="token comment">// 20</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'increment'</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+</code></pre></div><p>将需要的参数在<strong>Reducer</strong>函数入参中直接注册，在<strong>dispatch</strong>中直接使用逗号分隔传入即可</p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/zh/state.html" class="prev">
+          State
+        </a></span> <span class="next"><a href="/zh/subscribe.html">
+          Subscribe
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.311d2f34.js" defer></script><script src="/assets/js/19.85a987a3.js" defer></script>
+  </body>
+</html>

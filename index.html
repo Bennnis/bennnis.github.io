@@ -1,48 +1,51 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>flappy bird</title>
-    <script src="jquery-3.0.0.min.js"></script>
-    <script src="bird.js"></script>
-</head>
-<body>
-<h1 style="text-align: center">Flappy Bird HTML5--Canvas</h1>
-<h2 style="text-align: center" id="record">Best Record: <span></span></h2>
-<div style="margin: 30px auto;width:1440px; height:512px">
-    <canvas id="canvas" width="1440px" height="512px" style="border: 1px solid #2a2a2a"></canvas>
-</div>
-<div id="assets" style="display: none">
-    <img id="bird1" src="./flappybird/bird0_0.png">
-    <img id="bird2" src="./flappybird/bird0_1.png">
-    <img id="bird3" src="./flappybird/bird0_2.png">
-    <img id="back" src="./flappybird/bg_night.png">
-    <img id="land" src="./flappybird/land.png">
-    <img id="pipe_up" src="./flappybird/pipe_up.png">
-    <img id="pipe_down" src="./flappybird/pipe_down.png">
-    <img id="score_0" src="./flappybird/number_score_00.png">
-    <img id="score_1" src="./flappybird/number_score_01.png">
-    <img id="score_2" src="./flappybird/number_score_02.png">
-    <img id="score_3" src="./flappybird/number_score_03.png">
-    <img id="score_4" src="./flappybird/number_score_04.png">
-    <img id="score_5" src="./flappybird/number_score_05.png">
-    <img id="score_6" src="./flappybird/number_score_06.png">
-    <img id="score_7" src="./flappybird/number_score_07.png">
-    <img id="score_8" src="./flappybird/number_score_08.png">
-    <img id="score_9" src="./flappybird/number_score_09.png">
-    <img id="game_over" src="./flappybird/text_game_over.png">
-    <img id="new_game" src="./flappybird/new.png">
-    <img id="game_start" src="./flappybird/text_ready.png">
-    <img id="tab_start" src="./flappybird/tutorial.png">
-    <div>
-        <audio id="sound1" src="sound1.wav" preload="auto"/>
-        <audio id="sound2" src="sound2.wav" preload="auto"/>
-        <audio id="sound3" src="sound3.wav" preload="auto"/>
-    </div>
-</div>
-</body>
-<script>
-    $(function () {
-        $('canvas').startGame();
-    });
-</script>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Slim</title>
+    <meta name="description" content="Slim: Centralized State Management With Proxy, State-Non-Editable.">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.ad606c91.css" as="style"><link rel="preload" href="/assets/js/app.311d2f34.js" as="script"><link rel="preload" href="/assets/js/3.3e78496b.js" as="script"><link rel="prefetch" href="/assets/js/10.9f74d3b3.js"><link rel="prefetch" href="/assets/js/11.9d820fcc.js"><link rel="prefetch" href="/assets/js/12.3220bfd5.js"><link rel="prefetch" href="/assets/js/13.84e12a74.js"><link rel="prefetch" href="/assets/js/14.a3c12876.js"><link rel="prefetch" href="/assets/js/15.412eda9d.js"><link rel="prefetch" href="/assets/js/16.5c9f0dc0.js"><link rel="prefetch" href="/assets/js/17.d3d768ef.js"><link rel="prefetch" href="/assets/js/18.c8372d42.js"><link rel="prefetch" href="/assets/js/19.85a987a3.js"><link rel="prefetch" href="/assets/js/2.0982581a.js"><link rel="prefetch" href="/assets/js/20.dac8a89b.js"><link rel="prefetch" href="/assets/js/21.4b4c6e5c.js"><link rel="prefetch" href="/assets/js/22.af158a43.js"><link rel="prefetch" href="/assets/js/23.57b39cc2.js"><link rel="prefetch" href="/assets/js/4.565d9458.js"><link rel="prefetch" href="/assets/js/5.65c20bc6.js"><link rel="prefetch" href="/assets/js/6.32596b3d.js"><link rel="prefetch" href="/assets/js/7.b3d06d52.js"><link rel="prefetch" href="/assets/js/8.b3f744fa.js"><link rel="prefetch" href="/assets/js/9.a3d40b7a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ad606c91.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">Slim</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/intro.html" class="nav-link">Guide</a></div><div class="nav-item"><a href="/slimApi.html" class="nav-link">API</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Language</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link router-link-exact-active router-link-active">English</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/victor0210/slim" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link router-link-exact-active router-link-active">en-US</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">zh-CN</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/intro.html" class="nav-link">Guide</a></div><div class="nav-item"><a href="/slimApi.html" class="nav-link">API</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Language</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link router-link-exact-active router-link-active">English</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/victor0210/slim" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link router-link-exact-active router-link-active">en-US</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">zh-CN</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>QuickStart</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/intro.html" class="sidebar-link">Introduction</a></li><li><a href="/installation.html" class="sidebar-link">Installation</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Core Modules</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/state.html" class="sidebar-link">State</a></li><li><a href="/reducer.html" class="sidebar-link">Reducer</a></li><li><a href="/subscribe.html" class="sidebar-link">Subscribe</a></li><li><a href="/plugin.html" class="sidebar-link">Plugin</a></li></ul></div></li><li><a href="/slimApi.html" class="sidebar-link">API</a></li><li><a href="/controlLevel.html" class="sidebar-link">Mode</a></li></ul> </div> <div class="home"><div class="hero"><img src="/logo.png" alt="hero"> <h1>Slim</h1> <p class="description">
+      Centralized State Management With Proxy, State-Non-Editable.
+    </p> <p class="action"><a href="/intro.html" class="nav-link action-button">QuickStart →</a></p></div> <div class="features"><div class="feature"><h2>State-Readonly</h2> <p>Don't worry about the state's unpredictable mutation because the state can only be modified inside the reducer.</p></div><div class="feature"><h2>Single-Source</h2> <p>The state is centrally stored and is easy to initial in the isomorphic application.</p></div><div class="feature"><h2>Easy-Integrated</h2> <p>State hooks are easy to integrate quickly into mainstream frameworks such as Vue.</p></div></div> <div class="content custom"><h2 id="usage"><a href="#usage" aria-hidden="true" class="header-anchor">#</a> Usage</h2> <h3 id="installation"><a href="#installation" aria-hidden="true" class="header-anchor">#</a> Installation</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> slim
+</code></pre></div><h3 id="use-in-code"><a href="#use-in-code" aria-hidden="true" class="header-anchor">#</a> Use in code</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// state is single object</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>createStore<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'slim'</span>
+
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+    count<span class="token punctuation">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// reducers is event proxy</span>
+<span class="token keyword">const</span> reducers <span class="token operator">=</span> <span class="token punctuation">{</span>
+    increment<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        state<span class="token punctuation">.</span>count <span class="token operator">+=</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// create store</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    reducers<span class="token punctuation">,</span>
+    state
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// emit increment reducer</span>
+store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'increment'</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span><span class="token function">getState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>count<span class="token punctuation">)</span>
+<span class="token comment">// output: 1</span>
+</code></pre></div></div> <div class="footer">
+    MIT Licensed | Copyright © 2018-present Victor
+  </div></div> <!----></div></div>
+    <script src="/assets/js/app.311d2f34.js" defer></script><script src="/assets/js/3.3e78496b.js" defer></script>
+  </body>
 </html>
