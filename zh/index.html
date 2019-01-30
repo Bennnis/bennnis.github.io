@@ -7,7 +7,7 @@
     <meta name="description" content="Slim: Centralized State Management With Proxy, State-Non-Editable.">
     <link rel="slim icon" type="image/x-icon" href="/slimdocs/favicon.ico">
     
-    <link rel="preload" href="/slimdocs/assets/css/0.styles.a9dfea48.css" as="style"><link rel="preload" href="/slimdocs/assets/js/app.a781d271.js" as="script"><link rel="preload" href="/slimdocs/assets/js/16.a67e871a.js" as="script"><link rel="prefetch" href="/slimdocs/assets/js/10.56ee7478.js"><link rel="prefetch" href="/slimdocs/assets/js/11.d0b48a97.js"><link rel="prefetch" href="/slimdocs/assets/js/12.36d8eec9.js"><link rel="prefetch" href="/slimdocs/assets/js/13.af81f33a.js"><link rel="prefetch" href="/slimdocs/assets/js/14.6cd9f374.js"><link rel="prefetch" href="/slimdocs/assets/js/15.7204a1e2.js"><link rel="prefetch" href="/slimdocs/assets/js/17.75564889.js"><link rel="prefetch" href="/slimdocs/assets/js/18.9e97ef9e.js"><link rel="prefetch" href="/slimdocs/assets/js/19.94d93ecd.js"><link rel="prefetch" href="/slimdocs/assets/js/2.c69b6217.js"><link rel="prefetch" href="/slimdocs/assets/js/20.15885e32.js"><link rel="prefetch" href="/slimdocs/assets/js/21.556437a4.js"><link rel="prefetch" href="/slimdocs/assets/js/22.6980d0cc.js"><link rel="prefetch" href="/slimdocs/assets/js/23.c1875f14.js"><link rel="prefetch" href="/slimdocs/assets/js/24.29309b3a.js"><link rel="prefetch" href="/slimdocs/assets/js/25.dfc59d3c.js"><link rel="prefetch" href="/slimdocs/assets/js/26.3dea0a4b.js"><link rel="prefetch" href="/slimdocs/assets/js/27.a042633e.js"><link rel="prefetch" href="/slimdocs/assets/js/28.5abe4fd1.js"><link rel="prefetch" href="/slimdocs/assets/js/29.d7d80493.js"><link rel="prefetch" href="/slimdocs/assets/js/3.767e541f.js"><link rel="prefetch" href="/slimdocs/assets/js/4.301e22e2.js"><link rel="prefetch" href="/slimdocs/assets/js/5.dff8cc58.js"><link rel="prefetch" href="/slimdocs/assets/js/6.db102be6.js"><link rel="prefetch" href="/slimdocs/assets/js/7.d74d7c60.js"><link rel="prefetch" href="/slimdocs/assets/js/8.e1de9e91.js"><link rel="prefetch" href="/slimdocs/assets/js/9.8700c5e7.js">
+    <link rel="preload" href="/slimdocs/assets/css/0.styles.a9dfea48.css" as="style"><link rel="preload" href="/slimdocs/assets/js/app.f85b96d3.js" as="script"><link rel="preload" href="/slimdocs/assets/js/16.c8a00920.js" as="script"><link rel="prefetch" href="/slimdocs/assets/js/10.56ee7478.js"><link rel="prefetch" href="/slimdocs/assets/js/11.d0b48a97.js"><link rel="prefetch" href="/slimdocs/assets/js/12.36d8eec9.js"><link rel="prefetch" href="/slimdocs/assets/js/13.af81f33a.js"><link rel="prefetch" href="/slimdocs/assets/js/14.6cd9f374.js"><link rel="prefetch" href="/slimdocs/assets/js/15.7204a1e2.js"><link rel="prefetch" href="/slimdocs/assets/js/17.75564889.js"><link rel="prefetch" href="/slimdocs/assets/js/18.9e97ef9e.js"><link rel="prefetch" href="/slimdocs/assets/js/19.94d93ecd.js"><link rel="prefetch" href="/slimdocs/assets/js/2.c69b6217.js"><link rel="prefetch" href="/slimdocs/assets/js/20.15885e32.js"><link rel="prefetch" href="/slimdocs/assets/js/21.556437a4.js"><link rel="prefetch" href="/slimdocs/assets/js/22.6980d0cc.js"><link rel="prefetch" href="/slimdocs/assets/js/23.c1875f14.js"><link rel="prefetch" href="/slimdocs/assets/js/24.29309b3a.js"><link rel="prefetch" href="/slimdocs/assets/js/25.dfc59d3c.js"><link rel="prefetch" href="/slimdocs/assets/js/26.3dea0a4b.js"><link rel="prefetch" href="/slimdocs/assets/js/27.a042633e.js"><link rel="prefetch" href="/slimdocs/assets/js/28.5abe4fd1.js"><link rel="prefetch" href="/slimdocs/assets/js/29.d7d80493.js"><link rel="prefetch" href="/slimdocs/assets/js/3.5041a035.js"><link rel="prefetch" href="/slimdocs/assets/js/4.301e22e2.js"><link rel="prefetch" href="/slimdocs/assets/js/5.dff8cc58.js"><link rel="prefetch" href="/slimdocs/assets/js/6.db102be6.js"><link rel="prefetch" href="/slimdocs/assets/js/7.d74d7c60.js"><link rel="prefetch" href="/slimdocs/assets/js/8.e1de9e91.js"><link rel="prefetch" href="/slimdocs/assets/js/9.8700c5e7.js">
     <link rel="stylesheet" href="/slimdocs/assets/css/0.styles.a9dfea48.css">
   </head>
   <body>
@@ -24,19 +24,26 @@
 
 <span class="token comment">// state is single object</span>
 <span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
-    count<span class="token punctuation">:</span> <span class="token number">0</span>
+    name<span class="token punctuation">:</span> <span class="token string">'slim'</span><span class="token punctuation">,</span>
+    age<span class="token punctuation">:</span> <span class="token number">20</span>
 <span class="token punctuation">}</span>
 
-<span class="token comment">// reducers is event proxy</span>
+<span class="token comment">// reducers are event proxies</span>
 <span class="token keyword">const</span> reducers <span class="token operator">=</span> <span class="token punctuation">{</span>
     increment<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-        state<span class="token punctuation">.</span>count <span class="token operator">+=</span> <span class="token number">1</span>
+        state<span class="token punctuation">.</span>age <span class="token operator">+=</span> <span class="token number">1</span>
     <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// getters are computed functions of state</span>
+<span class="token keyword">const</span> getters <span class="token operator">=</span> <span class="token punctuation">{</span>
+  desc<span class="token punctuation">:</span> state <span class="token operator">=&gt;</span> <span class="token template-string"><span class="token string">`My name is : </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>state<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">, I'm </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>state<span class="token punctuation">.</span>age<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-years-old!`</span></span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">// create store</span>
 <span class="token keyword">const</span> store <span class="token operator">=</span> Slim<span class="token punctuation">.</span><span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
     reducers<span class="token punctuation">,</span>
+    getters<span class="token punctuation">,</span>
     state
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 
@@ -44,10 +51,13 @@
 store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'increment'</span><span class="token punctuation">)</span>
 
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span>
-<span class="token comment">// output: 1</span>
+<span class="token comment">// output: 21</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>getters<span class="token punctuation">.</span>desc<span class="token punctuation">)</span>
+<span class="token comment">// output: My name is : slim, I'm 21-years-old!`</span>
 </code></pre></div><h2 id="拓展设施"><a href="#拓展设施" aria-hidden="true" class="header-anchor">#</a> 拓展设施</h2> <ul><li><a href="/slimdocs/zh/vslim.html">VSlim</a>: 在Vue中基于Slim的状态管理框架</li> <li><a href="/slimdocs/zh/rslim.html">RSlim</a>: 在React中基于Slim的状态管理框架</li></ul></div> <div class="footer">
     MIT Licensed | Copyright © 2019-present Victor
   </div></div> <!----></div></div>
-    <script src="/slimdocs/assets/js/app.a781d271.js" defer></script><script src="/slimdocs/assets/js/16.a67e871a.js" defer></script>
+    <script src="/slimdocs/assets/js/app.f85b96d3.js" defer></script><script src="/slimdocs/assets/js/16.c8a00920.js" defer></script>
   </body>
 </html>
