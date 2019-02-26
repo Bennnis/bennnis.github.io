@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Action | Slim</title>
+    <meta name="description" content="Slim: Centralized State Management With Proxy, State-Non-Editable.">
+    <link rel="slim icon" type="image/x-icon" href="/slimdocs/favicon.ico">
+    
+    <link rel="preload" href="/slimdocs/assets/css/0.styles.a9dfea48.css" as="style"><link rel="preload" href="/slimdocs/assets/js/app.8235bcc4.js" as="script"><link rel="preload" href="/slimdocs/assets/js/18.51c1ef73.js" as="script"><link rel="prefetch" href="/slimdocs/assets/js/10.54e2f319.js"><link rel="prefetch" href="/slimdocs/assets/js/11.d6101f6f.js"><link rel="prefetch" href="/slimdocs/assets/js/12.dd155003.js"><link rel="prefetch" href="/slimdocs/assets/js/13.75910f8a.js"><link rel="prefetch" href="/slimdocs/assets/js/14.e05d1557.js"><link rel="prefetch" href="/slimdocs/assets/js/15.5130dab1.js"><link rel="prefetch" href="/slimdocs/assets/js/16.d137afba.js"><link rel="prefetch" href="/slimdocs/assets/js/17.8c1af571.js"><link rel="prefetch" href="/slimdocs/assets/js/19.3b8c97e6.js"><link rel="prefetch" href="/slimdocs/assets/js/2.fcd14679.js"><link rel="prefetch" href="/slimdocs/assets/js/20.c36db35b.js"><link rel="prefetch" href="/slimdocs/assets/js/21.e788e463.js"><link rel="prefetch" href="/slimdocs/assets/js/22.6a5f6016.js"><link rel="prefetch" href="/slimdocs/assets/js/23.873d855b.js"><link rel="prefetch" href="/slimdocs/assets/js/24.aef1a369.js"><link rel="prefetch" href="/slimdocs/assets/js/25.ec090d99.js"><link rel="prefetch" href="/slimdocs/assets/js/26.465c490f.js"><link rel="prefetch" href="/slimdocs/assets/js/27.bb1d7f3e.js"><link rel="prefetch" href="/slimdocs/assets/js/28.fa780cd6.js"><link rel="prefetch" href="/slimdocs/assets/js/29.f0c81e8d.js"><link rel="prefetch" href="/slimdocs/assets/js/3.4922e190.js"><link rel="prefetch" href="/slimdocs/assets/js/30.6d25c538.js"><link rel="prefetch" href="/slimdocs/assets/js/31.1c0df7bd.js"><link rel="prefetch" href="/slimdocs/assets/js/4.6947a0b8.js"><link rel="prefetch" href="/slimdocs/assets/js/5.a6c4e38c.js"><link rel="prefetch" href="/slimdocs/assets/js/6.0e819283.js"><link rel="prefetch" href="/slimdocs/assets/js/7.3a81a3fe.js"><link rel="prefetch" href="/slimdocs/assets/js/8.5b89c563.js"><link rel="prefetch" href="/slimdocs/assets/js/9.6b023893.js">
+    <link rel="stylesheet" href="/slimdocs/assets/css/0.styles.a9dfea48.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/slimdocs/zh/" class="home-link router-link-active"><!----> <span class="site-name">Slim</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/slimdocs/zh/intro.html" class="nav-link">指南</a></div><div class="nav-item"><a href="/slimdocs/zh/slimApi.html" class="nav-link">接口文档</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/slimdocs/action.html" class="nav-link">English</a></li><li class="dropdown-item"><!----> <a href="/slimdocs/zh/action.html" class="nav-link router-link-exact-active router-link-active">简体中文</a></li></ul></div></div> <a href="https://github.com/victor0210/slim" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/slimdocs/zh/intro.html" class="nav-link">指南</a></div><div class="nav-item"><a href="/slimdocs/zh/slimApi.html" class="nav-link">接口文档</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/slimdocs/action.html" class="nav-link">English</a></li><li class="dropdown-item"><!----> <a href="/slimdocs/zh/action.html" class="nav-link router-link-exact-active router-link-active">简体中文</a></li></ul></div></div> <a href="https://github.com/victor0210/slim" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading"><span>快速开始</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/slimdocs/zh/intro.html" class="sidebar-link">介绍</a></li><li><a href="/slimdocs/zh/installation.html" class="sidebar-link">安装</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading open"><span>核心模块</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/slimdocs/zh/state.html" class="sidebar-link">State</a></li><li><a href="/slimdocs/zh/reducer.html" class="sidebar-link">Reducer</a></li><li><a href="/slimdocs/zh/action.html" class="active sidebar-link">Action</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/slimdocs/zh/action.html#设计action" class="sidebar-link">设计action</a></li><li class="sidebar-sub-header"><a href="/slimdocs/zh/action.html#操作异步" class="sidebar-link">操作异步</a></li></ul></li><li><a href="/slimdocs/zh/plugin.html" class="sidebar-link">Plugin</a></li><li><a href="/slimdocs/zh/event.html" class="sidebar-link">EventCenter</a></li></ul></div></li><li><a href="/slimdocs/zh/slimApi.html" class="sidebar-link">API</a></li><li><a href="/slimdocs/zh/controlLevel.html" class="sidebar-link">限制级别</a></li><li><a href="/slimdocs/zh/vslim.html" class="sidebar-link">VSlim</a></li><li><a href="/slimdocs/zh/rslim.html" class="sidebar-link">RSlim</a></li><li><a href="/slimdocs/zh/devtool.html" class="sidebar-link">状态记录工具</a></li></ul> </div> <div class="page"> <div class="content"><h1 id="action"><a href="#action" aria-hidden="true" class="header-anchor">#</a> Action</h1> <p><strong>Action</strong>是<strong>Slim</strong>抽象出来的一个数据变化逻辑控制层，主要是控制<strong>Reducer</strong>的触发逻辑，也可以在这里控制异步。</p> <div class="tip custom-block"><p class="custom-block-title">提示</p> <p>大多数情况下，可能只需要直接触发<strong>Reducer</strong>即可，<strong>Action</strong>可以没有，但是<strong>Reducer</strong>必须有。</p></div> <h2 id="设计action"><a href="#设计action" aria-hidden="true" class="header-anchor">#</a> 设计action</h2> <p>在<strong>Slim</strong>中，一个<strong>Action</strong>以一个键值对的方式定义，接下来让我们看看如何实现一个<strong>Action</strong>。在我们一个简单的计数器应用中，我们希望有两种操作：</p> <p>接下来让我们看看如何实现一个<strong>Action</strong>。在我们一个简单的计数器应用中，我们希望有两种操作：</p> <ul><li>增加计数：increment</li> <li>减少计数：decrement</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> Slim <span class="token keyword">from</span> <span class="token string">'slim-store'</span>
+
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+    count<span class="token punctuation">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> reducers <span class="token operator">=</span> <span class="token punctuation">{</span>
+    increment<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">// increment count</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    decrement<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">// decrement count</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    increment<span class="token punctuation">:</span> <span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>context<span class="token punctuation">.</span>state<span class="token punctuation">.</span>count <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span> context<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'increment'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    decrement<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>state<span class="token punctuation">,</span> commit<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>state<span class="token punctuation">.</span>count <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'decrement'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> Slim<span class="token punctuation">.</span><span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    reducers<span class="token punctuation">,</span>
+    actions<span class="token punctuation">,</span>
+    state
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'increment'</span><span class="token punctuation">)</span>
+</code></pre></div><p>执行<strong>Action</strong>非常简单，执行<code>store.dispatch(actionType, ...arguments)</code>即可。</p> <h2 id="操作异步"><a href="#操作异步" aria-hidden="true" class="header-anchor">#</a> 操作异步</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> Slim <span class="token keyword">from</span> <span class="token string">'../../src/slim/index'</span>
+
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+  count<span class="token punctuation">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> reducers <span class="token operator">=</span> <span class="token punctuation">{</span>
+  decrement<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">,</span> decrementNum<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// computed new state</span>
+    <span class="token keyword">let</span> count <span class="token operator">=</span> state<span class="token punctuation">.</span>count <span class="token operator">-</span> <span class="token punctuation">(</span>decrementNum <span class="token operator">||</span> <span class="token number">1</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// reduce new state</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token operator">...</span>state<span class="token punctuation">,</span>
+      count
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">decrement</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>commit<span class="token punctuation">}</span><span class="token punctuation">,</span> decrementNum<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">sleeper</span><span class="token punctuation">(</span>decrementNum<span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>decrementNum <span class="token operator">=&gt;</span> <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'decrement'</span><span class="token punctuation">,</span> decrementNum<span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  
+  <span class="token comment">// 或者使用 async/await</span>
+  <span class="token keyword">async</span> <span class="token function">decrement</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>commit<span class="token punctuation">}</span><span class="token punctuation">,</span> decrementNum<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> decrementNum <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">sleeper</span><span class="token punctuation">(</span>decrementNum<span class="token punctuation">)</span>
+    <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'decrement'</span><span class="token punctuation">,</span> decrementNum<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">sleeper</span> <span class="token operator">=</span> <span class="token punctuation">(</span>decrementNum<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 取绝对值</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span>resolve <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>decrementNum<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> plugin <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">after</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">renderCount</span><span class="token punctuation">(</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> Slim<span class="token punctuation">.</span><span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  reducers<span class="token punctuation">,</span>
+  actions<span class="token punctuation">,</span>
+  state<span class="token punctuation">,</span>
+  plugin<span class="token punctuation">:</span> <span class="token punctuation">[</span>plugin<span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'decrement'</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">)</span>
+<span class="token comment">// decrement 5 after 1000ms</span>
+<span class="token comment">// output: -5</span>
+</code></pre></div></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/victor0210/slim/edit/master/docs/zh/action.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">最近一次更新: </span> <span class="time">2/20/2019, 6:05:34 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/slimdocs/zh/reducer.html" class="prev">
+          Reducer
+        </a></span> <span class="next"><a href="/slimdocs/zh/plugin.html">
+          Plugin
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/slimdocs/assets/js/app.8235bcc4.js" defer></script><script src="/slimdocs/assets/js/18.51c1ef73.js" defer></script>
+  </body>
+</html>
